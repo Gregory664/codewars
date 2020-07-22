@@ -1,0 +1,15 @@
+package codewars.kyu7;
+
+import org.junit.Test;
+
+import static org.junit.Assert.*;
+
+public class AlternateCapitalizationTest {
+    @Test
+    public void basicTests(){
+        assertArrayEquals(new String[]{"AbCdEf", "aBcDeF"}, AlternateCapitalization.capitalize("abcdef"));
+        assertArrayEquals(new String[]{"CoDeWaRs", "cOdEwArS"}, AlternateCapitalization.capitalize("codewars"));
+        assertArrayEquals(new String[]{"AbRaCaDaBrA", "aBrAcAdAbRa"}, AlternateCapitalization.capitalize("abracadabra"));
+        assertArrayEquals(new String[]{"CoDeWaRrIoRs", "cOdEwArRiOrS"}, AlternateCapitalization.capitalize("codewarriors"));
+    }
+}
