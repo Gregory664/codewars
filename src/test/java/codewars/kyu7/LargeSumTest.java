@@ -6,18 +6,36 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
 public class LargeSumTest {
+    @Ignore
     @Test
-    public void testFirstTenDigitsOfSum2() {
-        String[] number = {"123",
-                "123",
-                "123",
-                "123",
-                "123"
+    public void testFirstTenDigitsOfSum3() {
+        String[] number = {
+                "99999",
+                "88888",
+                "77777",
+                "66666",
+                "55555",
+                "44444",
+                "33333",
+                "22222",
+                "11111"
         };
-        assertEquals("5537376230", LargeSum.firstTenDigitsOfSum(number));
+        assertEquals("499995", LargeSum.firstTenDigitsOfSum(number));
     }
 
     @Ignore
+    @Test
+    public void testFirstTenDigitsOfSum2() {
+        String[] number = {"999",
+                "888",
+                "777",
+                "666",
+                "555"
+        };
+        assertEquals("3885", LargeSum.firstTenDigitsOfSum(number));
+    }
+
+//    @Ignore
     @Test
     public void testFirstTenDigitsOfSum() {
         String[] number = {"37107287533902102798797998220837590246510135740250",
